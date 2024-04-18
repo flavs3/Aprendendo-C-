@@ -1,0 +1,21 @@
+using System;
+
+private class AprendendoConstrutor
+{
+    public int teste;
+    
+    public AprendendoConstrutor()
+    {
+        teste = 123;
+    }
+
+}
+public class HelloWorld
+{
+    public static void Main(string[] args) 
+    
+    {
+        AprendendoConstrutor c = new AprendendoConstrutor();
+        Console.WriteLine (c.teste);
+    }
+}
