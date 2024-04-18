@@ -1,0 +1,32 @@
+using System;
+
+public class FuncionamentoConstrutor
+{
+    public string relacaoClasse;
+
+    public FuncionamentoConstrutor()
+    {
+    relacaoClasse = "Quando uma classe é instanciada, o construtor eh chamado";
+    }
+}
+
+public class AprendendoConstrutor
+{
+    public string teste;
+
+    public AprendendoConstrutor(FuncionamentoConstrutor fun)
+    {
+        teste = "Uma classe foi passada como parametro para o construtor de outra classe. Assim, preciso instanciar as duas classes em Execucao. Nesse momento, os construtores sao chamados. Caso nao existir construtor, os membros sao inicializados como null";
+    }
+
+}
+public class Execucao
+{
+    public static void Main(string[] args) 
+    
+    {
+        FuncionamentoConstrutor fun = new FuncionamentoConstrutor();
+        AprendendoConstrutor c = new AprendendoConstrutor(fun);
+        Console.WriteLine (c.teste);
+    }
+}
