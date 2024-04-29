@@ -1,0 +1,27 @@
+using System;
+
+
+public class CarrinhoDeCompras 
+{
+    public int Item;
+}
+
+public class TelaEdicaoItem 
+{
+    public int Item;
+    
+    public static TelaEdicaoItem EdicaoItem()
+    {
+        TelaEdicaoItem telaEdicaoItem = new TelaEdicaoItem();
+        return telaEdicaoItem;
+    }
+} 
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        TelaEdicaoItem instanciaTela = TelaEdicaoItem.EdicaoItem();
+        Console.WriteLine ("O metodo estatico possilita que uma classe seja chamada, sem necessidade de criar uma instancia de classe. A classe TelaEdicaoItem, possui um metodo estatico, que a retorna.");
+    }
+}
